@@ -6,12 +6,12 @@ import image4 from '../Assets/person4.jpg'
 
 export const testmonials =  [
 {image:image1,testmony:'will visit again',name:'Ana', rating:'Love It'},
-{image:image2,testmony:'recomended for every one',name:'Wilson', rating:'For Everyone'},
+{image:image2,testmony:'recomended for all',name:'Wilson', rating:'For Everyone'},
 {image:image3,testmony:'best quality food',name:'Jessica', rating:'Best Quality'},
 {image:image1,testmony:'will visit again',name:'Ana', rating:'Love It'},
-{image:image2,testmony:'recomended for every one',name:'Wilson', rating:'For Everyone'},
+{image:image2,testmony:'recomended for all',name:'Wilson', rating:'For Everyone'},
 {image:image3,testmony:'best quality food',name:'Jessica', rating:'Best Quality'},
 {image:image1,testmony:'will visit again',name:'Ana', rating:'Love It'},
-{image:image2,testmony:'recomended for every one',name:'Wilson', rating:'For Everyone'}
+{image:image2,testmony:'recomended for all',name:'Wilson', rating:'For Everyone'}
 
 ]

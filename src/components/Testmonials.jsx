@@ -15,11 +15,10 @@ const Testmonials = () => {
               <h4 className='rating'>{item.rating}</h4>
               <div className='person'>
                 <img src={item.image} className='personImg'/>
-                <h4 className='personName'>{item.name}</h4>                
+                <h4 className='personName'>{item.name}</h4>
               </div>
               <p>{item.testmony}!</p>
             </div>
-            
           </section>)
         })}
       </div>

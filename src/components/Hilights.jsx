@@ -3,14 +3,18 @@ import greekSalad from '../Assets/greek salad.jpg'
 import burchetta from '../Assets/bruchetta.svg'
 import lemonDesert from '../Assets/lemon dessert.jpg'
 import devlivery from '../Assets/scooter-delivery-food-svgrepo-com.svg'
+import { NavLink } from 'react-router-dom'
 const Hilights = () => {
   return (
     <div className='Hilights'>
-      <div className='onlineitems'>
-        <h2>Specials</h2>
-        <button className='orderOnline'>Order Online</button>
-      </div>
-      <div className='itmesContainer'>
+      <div className='container'>
+        <div className='onlineitems'>
+          <h2>Specials</h2>
+          <NavLink  to="/OrderOnline">
+            <button className='orderOnline'>Order Online</button>
+          </NavLink>
+        </div>
+        <div className='itmesContainer'>
           <section className='item'>
             <img src={greekSalad}/>
             <div>
@@ -21,7 +25,7 @@ const Hilights = () => {
                 <a>Order Delivery</a>
                 <img src={devlivery}  className='deliveryicon'/>
                 </h5>
-            </div> 
+            </div>
           </section>
           <section className='item'>
             <img src={burchetta}/>
@@ -45,8 +49,9 @@ const Hilights = () => {
                 <a>Order Delivery</a>
                 <img src={devlivery} className='deliveryicon'/>
                 </h5>
-            </div>                        
+            </div>
           </section>
+        </div>
       </div>
     </div>
   )

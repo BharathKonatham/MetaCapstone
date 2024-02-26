@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo2 from '../Assets/footer-logo.png'
+import { NavLink } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer>
@@ -8,17 +9,17 @@ const Footer = () => {
           <img src={Logo2} className='logo2'/>
         </section>
         <section>
-          <h5><a>Home</a></h5>
-          <h5><a>About</a></h5>
-          <h5><a>Menu</a></h5>
-          <h5><a>Reservations</a></h5>
-          <h5><a>Order Online</a></h5>
-          <h5><a>Login</a></h5>
+          <p><NavLink  to="/">Home</NavLink></p>
+          <p><NavLink  to="/Menu">Menu</NavLink></p>
+          <p><NavLink  to="/About">About</NavLink></p>
+          <p><NavLink  to="/Reservations">Reservations</NavLink></p>
+          <p><NavLink  to="/OrderOnline">Order Online</NavLink></p>
+          <p><NavLink  to="/Login">Login</NavLink></p>
         </section>
         <section>
-        <h5>Address</h5>
-        <h5>Phone number</h5>
-        <h5>email</h5>
+        <p>Address</p>
+        <p>Phone number</p>
+        <p>email</p>
         </section>
       </div>
     </footer>

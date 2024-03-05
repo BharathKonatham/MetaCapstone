@@ -3,7 +3,7 @@ import chefsA from '../Assets/Mario and Adrian A.jpg'
 import chefsB from '../Assets/Mario and Adrian b.jpg'
 const About = () => {
   return (
-    <div className='About'>
+    <div className='About' id='about'>
         <div className='AboutContainer'> 
             <div className='title'>
                 <h1>Little Lemon</h1>

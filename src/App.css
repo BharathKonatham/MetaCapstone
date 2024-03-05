@@ -35,10 +35,15 @@ body{
   width: 100%;
 }
 .Navbar ul{
+
   margin-right: 10px;
   list-style: none;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.Navbar ul li {
+  margin-right: 35px;
 }
 .Navbar ul li a{
   text-decoration: none;
@@ -215,6 +220,9 @@ body{
   object-position: center;
 }
 
+button:hover{
+  box-shadow: 0 0 1px 1px black;
+}
 
 .testmonial{
     width: 100%;
@@ -370,4 +378,7 @@ footer{
   margin-top: 10px;
   object-fit: contain;
   object-position: center;
+}
+a:hover{
+  cursor: pointer;
 }

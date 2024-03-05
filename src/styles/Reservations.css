@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+  display: grid;
+  place-items: center;
+}
+body{
+  font-family:Poppins,sans-serif;
+  width: 1200px;
+  margin-top: 20px;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    border: 1px solid black;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+}
+nav .backIcon{
+  width: 40px;
+  height: 40px;
+  margin: 0px 30px;
+  background-color: #E9CC35;
+  border-radius: 16px;
+}
+nav h2{
+  width: auto;
+  height: 48px;
+  font-family:initial;
+  font-size: 48px;
+  line-height: 1;
+  margin: 0px;
+  color: #495e57;
+}
+
+.currentReservations{
+  height: 450px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #495e57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+}
+.currentReservations h3{
+  align-self: flex-start;
+  margin:20px 100px;
+  font-style: normal;
+  font-size: 36px;
+}
+.currentReservations  .CurrReservContainer{
+  width: 1000px;
+  height: 225px;
+  border: 1px solid #CBC5C5;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.CurrReservContainer .eventDetailsContainer{
+  margin: 20px;
+}
+.eventDetails{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.eventDetails .date{
+  justify-self:left;
+}
+.eventDetails .date div, .eventDetails .time div, .eventDetails .Guests div{
+  width: auto;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 16px;
+}

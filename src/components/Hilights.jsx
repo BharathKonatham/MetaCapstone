@@ -50,6 +50,7 @@ const Hilights = () => {
                 <img src={devlivery} className='deliveryicon'/>
                 </h5>
             </div>
+            
           </section>
         </div>
       </div>

@@ -15,6 +15,7 @@ const Footer = () => {
           <p><NavLink  to="/Reservations">Reservations</NavLink></p>
           <p><NavLink  to="/OrderOnline">Order Online</NavLink></p>
           <p><NavLink  to="/Login">Login</NavLink></p>
+          
         </section>
         <section>
         <p>Address</p>

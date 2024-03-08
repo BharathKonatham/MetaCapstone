@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.NewReservMain .Hero{
+    height: 310px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.NewReservMain .Hero .title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #F4CE14, #B5980F, #8E780C);
+}
+.NewReservMain .Hero .title h3{
+    margin: 0px;
+    font-family:sans-serif;
+    font-size: 56px;
+}
+.NewReservMain .Hero .title h3:nth-child(2){
+    color: #495E57;
+}
+.NewReservMain .Hero .title h3:nth-child(3){
+    color: white;
+}
+.NewReservMain .Hero .image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../Assets/restauranfood.jpg");
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    display: flex;
+    place-items: center;
+    color: #a5a59f;
+}
+.NewReservMain .Hero .image p{
+    text-align: center;
+    margin: 0px 10px;
+}

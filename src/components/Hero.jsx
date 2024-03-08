@@ -11,7 +11,7 @@ const Hero = () => {
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis tenetur quod maxime laudantium doloribus. Fugit, corporis. Minima consequuntur dignissimos optio rem id, nobis commodi, animi libero iure laborum quas iusto.
               </p>
-              <NavLink to="/Reservations" >
+              <NavLink to="/NewReservation" >
                 <button className='reservetable'>Reserve a Table</button>
               </NavLink>
           </section>

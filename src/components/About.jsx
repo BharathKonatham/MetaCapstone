@@ -11,7 +11,7 @@ const About = () => {
                 <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem unde officia consectetur dolores maxime dicta exercitationem sit 
                 neque sed. Libero commodi ut voluptas aliquam. At quidem deleniti iusto dolor tempora alias sint commodi fuga optio? Vitae ea illum non voluptas.
-                </p>         
+                </p>
             </div>
             <div className='heroimgcontainer'>
             

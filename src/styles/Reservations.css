@@ -1,22 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html{
-  display: grid;
-  place-items: center;
-}
-body{
-  font-family:Poppins,sans-serif;
-  width: 1200px;
-  margin-top: 20px;
-  border: 1px solid lightgray;
-  border-radius: 16px;
-}
 
 nav{
     width: 100%;
     height: 80px;
     margin: 0px;
     border: 1px solid black;
+    background-color: #F3F3F3;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -46,15 +36,16 @@ nav h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-
   color: white;
 }
+
 .currentReservations h3{
   align-self: flex-start;
   margin:20px 100px;
   font-style: normal;
   font-size: 36px;
 }
+
 .currentReservations  .CurrReservContainer{
   width: 1000px;
   height: 225px;
@@ -63,20 +54,156 @@ nav h2{
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+
 .CurrReservContainer .eventDetailsContainer{
   margin: 20px;
+}
+.eventDetailsContainer h4{
+  margin: 0px;
+  font-style: normal;
+  font-size: 28px;
 }
 .eventDetails{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  align-items: center;
+  text-align: center;
 }
+
 .eventDetails .date{
   justify-self:left;
 }
+.eventDetails .Guests{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .eventDetails .date div, .eventDetails .time div, .eventDetails .Guests div{
-  width: auto;
+ 
   height: 60px;
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eventDetails .date div{
+width: 220px;
+}
+.eventDetails .time div{
+width:120px
+}
+.eventDetails .Guests div{
+width: 90px;
+}
+
+.eventStatus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currentReservations a{
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: 100px;
+  width: 360px;
+  height: 60px;
+  text-decoration: none;
+}
+.currentReservations button {
+  width: 100%;
+  height: 100%;
   border: 1px solid black;
   border-radius: 16px;
+  font-family: Poppins;
+  font-size:large;
+  background-color: #E9CC35;
+}
+button:hover{
+  cursor: pointer;
+}
+
+
+.prevReservations{
+  height: auto;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color:#fcfcfa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.prevReservations h3{
+  align-self: flex-start;
+  margin:20px 100px;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.prevReservations  .prevReservContainer{
+  width: 1000px;
+  height: 225px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns:  1fr;
+}
+
+.prevReservContainer .prevDetailsContainer{
+  margin: 20px;
+}
+.prevDetailsContainer h4{
+  margin: 0px;
+  font-style: normal;
+  font-size: 28px;
+}
+.prevEventDetails{
+  display: flex;
+  justify-content: space-between;
+}
+
+.prevEventDetails .date{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.prevEventDetails .date div{
+  height: 60px;
+  color: black;
+  width: 220px;
+  margin-left: 10px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prevEventDetails{
+  margin-right: 60px;
+}
+.eventDetails .date div{
+width: 220px;
+}
+
+.eventDetails .Guests div{
+width: 90px;
+}
+
+.eventStatus{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,10 +1,14 @@
 import React from 'react'
+import {NavLink } from 'react-router-dom';
 import chefsB from '../Assets/backIcon.svg'
-const ReservationsNav = () => {
+
+const ReservationsNav = ({Heading,From}) => {
+  console.log(From)
+  const To = From === "Home" ? "/":"/Reservations"
   return (
     <nav>
-      <img src={chefsB} alt='backIcon' className='backIcon'/>
-      <h2>Reservations</h2>
+      <NavLink  to={To? To : '/'}><img src={chefsB} alt='backIcon' className='backIcon'/></NavLink>
+      <h2>{Heading}</h2>
     </nav>
   )
 }

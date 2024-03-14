@@ -8,7 +8,7 @@ import PrevReserv from '../components/PrevReserv'
 import Footer from '../components/Footer'
 
 const Reservations = () => {
- 
+
   return (
     <main className='ReservationsMain'>
         <ReservationsNav Heading="Reservations" From="Reservations"  />

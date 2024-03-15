@@ -6,13 +6,16 @@ import ReservationsNav from '../components/ReservationsNav'
 import CurrReserv from '../components/CurrReserv'
 import PrevReserv from '../components/PrevReserv'
 import Footer from '../components/Footer'
-
+import { UseSelector, useSelector } from 'react-redux';
 const Reservations = () => {
+  const reservations = useSelector((state)=>state.Reservation.ReservationDetails)
+
+console.log(reservations)
 
   return (
     <main className='ReservationsMain'>
         <ReservationsNav Heading="Reservations" From="Reservations"  />
-        <CurrReserv />
+        <CurrReserv reservations= {reservations}/>
         <PrevReserv />
         <Footer />
     </main>

@@ -197,6 +197,7 @@ input {
     height: 150px;
     margin-right: 100px;
     padding-top: 10px;
+    padding-left: 10px;
     resize: none;
     border-radius: 16px;
     font-family: sans-serif;

@@ -24,14 +24,16 @@ const ReservInfo = ({resrvData,setReservData}) => {
                             <div>
                                 {
                                     [1,2,3,4,5,6].map((item,index)=>(
-                                       <button className={`button_${item === resrvData.noOfGuests? 'selected':''}`} key={index} onClick={()=>{setReservData({...resrvData,noOfGuests:item})}}>{item}</button>
+                                       <button className={`button_${item === resrvData.noOfGuests? 'selected':''}`} key={index} onClick={(e)=>{
+                                        e.preventDefault()
+                                        setReservData({...resrvData,noOfGuests:item})}}>{item}</button>
                                     ))
                                 }
                             </div>
                         </div>
                         <div className="event">
                         <label htmlFor='eventType'>Event Type</label>
-                            <select id="eventType"   onChange={(e)=>{
+                            <select id="eventType" value={resrvData.eventType}  onChange={(e)=>{
                                 setReservData({...resrvData,eventType:e.target.value})
                             }}>
                                 <option value="">Select Event</option>

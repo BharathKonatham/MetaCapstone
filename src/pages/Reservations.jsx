@@ -6,7 +6,7 @@ import ReservationsNav from '../components/ReservationsNav'
 import CurrReserv from '../components/CurrReserv'
 import PrevReserv from '../components/PrevReserv'
 import Footer from '../components/Footer'
-import { UseSelector, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 const Reservations = () => {
   const reservations = useSelector((state)=>state.Reservation.ReservationDetails)
 
